@@ -28,8 +28,7 @@ public class MybatisTest {
 
 	@Test
 	public void testGetUserInfo() {
-		long userId = 3130101028L;
-		List<UserInfoDto> uidList=userInfomapper.getUserInfo(userId);
+		List<UserInfoDto> uidList=userInfomapper.getUserInfo();
 		for (UserInfoDto uid : uidList) {
 			System.out.println("useName : " + uid.getUserName());
 		}
